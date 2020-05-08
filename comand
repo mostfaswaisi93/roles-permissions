@@ -22,3 +22,9 @@ php artisan permission:create-permission "add post" "Add Post"
 
 4- middleware
 php artisan make:controller AdminController
+
+5- Database Seeder
+php artisan make:seeder RoleTableSeeder
+php artisan make:seeder AdminUserSeeder
+
+php artisan migrate:fresh --seed
