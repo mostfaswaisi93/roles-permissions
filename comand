@@ -17,4 +17,8 @@ php artisan permission:create-permission "view post"
 php artisan permission:create-permission "edit post"
 php artisan permission:create-permission "delete post"
 
-4- 
+-> with guard
+php artisan permission:create-permission "add post" "Add Post"
+
+4- middleware
+php artisan make:controller AdminController
