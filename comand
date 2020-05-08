@@ -1,0 +1,12 @@
+1-
+composer require laravel/ui 
+php artisan ui bootstrap --auth
+npm install
+npm audit fix
+npm run dev
+composer require spatie/laravel-permission
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+php artisan migrate
+
+2-
+php artisan permission:create-role admin admin 
