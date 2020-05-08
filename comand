@@ -12,7 +12,9 @@ php artisan migrate
 php artisan permission:create-role admin admin 
 
 3- permission
-php artisan permission:create-permission "create_post" "Create Post"
-php artisan permission:create-permission "read_post" "Read Post"
-php artisan permission:create-permission "update_post" "Update Post"
-php artisan permission:create-permission "delete_post" "Delete Post"
+php artisan permission:create-permission "add post"
+php artisan permission:create-permission "view post"
+php artisan permission:create-permission "edit post"
+php artisan permission:create-permission "delete post"
+
+4- 

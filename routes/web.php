@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Spatie\Permission\Models\Role;
 
 Route::get('/', function () {
 
@@ -18,15 +19,23 @@ Route::get('/', function () {
     //     return "OK";
     // }
 
-
     // 2- Permission
-    $user = auth()->user();
+    // $user = auth()->user();
 
     // $user->givePermissionTo('add post');
     // $user->revokePermissionTo('add post');
     // $user->syncPermissions(['add post', 'delete post']);
-    dd($user->hasAnyPermission(['add post', 'edit post']));
+    // dd($user->hasAnyPermission(['add post', 'edit post']));
     // dd($user->hasPermissionTo('add post'));
+
+    // 3- Role and Permission
+    // $user = auth()->user();
+    // $role = Role::find(2);
+    // $role->givePermissionTo('add post', 'edit post', 'delete post', 'view post');
+    // $role->syncPermissions('add post', 'edit post', 'delete post', 'view post');
+    // dd($user->can('add post'));
+
+    // dd($user);
 
 });
 
